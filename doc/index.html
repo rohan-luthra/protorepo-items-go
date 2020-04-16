@@ -175,11 +175,47 @@
         
           
           <li>
-            <a href="#sub_category.proto">sub_category.proto</a>
+            <a href="#item.proto">item.proto</a>
             <ul>
               
+                <li>
+                  <a href="#item.Addon"><span class="badge">M</span>Addon</a>
+                </li>
+              
+                <li>
+                  <a href="#item.AddonItem"><span class="badge">M</span>AddonItem</a>
+                </li>
+              
+                <li>
+                  <a href="#item.Id"><span class="badge">M</span>Id</a>
+                </li>
+              
+                <li>
+                  <a href="#item.Item"><span class="badge">M</span>Item</a>
+                </li>
+              
+                <li>
+                  <a href="#item.RestId"><span class="badge">M</span>RestId</a>
+                </li>
               
               
+                <li>
+                  <a href="#item.SpecialCategory"><span class="badge">E</span>SpecialCategory</a>
+                </li>
+              
+                <li>
+                  <a href="#item.Timings"><span class="badge">E</span>Timings</a>
+                </li>
+              
+                <li>
+                  <a href="#item.Type"><span class="badge">E</span>Type</a>
+                </li>
+              
+              
+              
+                <li>
+                  <a href="#item.ItemService"><span class="badge">S</span>ItemService</a>
+                </li>
               
             </ul>
           </li>
@@ -191,17 +227,471 @@
     
       
       <div class="file-heading">
-        <h2 id="sub_category.proto">sub_category.proto</h2><a href="#title">Top</a>
+        <h2 id="item.proto">item.proto</h2><a href="#title">Top</a>
       </div>
       <p></p>
 
       
+        <h3 id="item.Addon">Addon</h3>
+        <p></p>
 
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>id</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>TODO: add multiple language to name &amp; description
+
+mongo id </p></td>
+                </tr>
+              
+                <tr>
+                  <td>name</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>description</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>rest_id</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>mongo id (foreign key Restaurant - _id) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>addon_item</td>
+                  <td><a href="#item.AddonItem">AddonItem</a></td>
+                  <td>repeated</td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>__type</td>
+                  <td><a href="#item.Type">Type</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id="item.AddonItem">AddonItem</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>id</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>TODO: add multiple language to name &amp; description </p></td>
+                </tr>
+              
+                <tr>
+                  <td>name</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>price</td>
+                  <td><a href="#float">float</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>available</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>description</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id="item.Id">Id</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>id</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id="item.Item">Item</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>id</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>TODO: add multiple language to name &amp; description
+
+mongo Objectid </p></td>
+                </tr>
+              
+                <tr>
+                  <td>name</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>description</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>price</td>
+                  <td><a href="#float">float</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>ratings</td>
+                  <td><a href="#float">float</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>ratings_count</td>
+                  <td><a href="#int32">int32</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>order_count</td>
+                  <td><a href="#int32">int32</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>category_id</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>mongo ObjectId ( fkey Categories - _id ) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>sub_category_id</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>mongo ObjectId ( fkey Categories - _id ) </p></td>
+                </tr>
+              
+                <tr>
+                  <td>spl_categories</td>
+                  <td><a href="#item.SpecialCategory">SpecialCategory</a></td>
+                  <td>repeated</td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>tags</td>
+                  <td><a href="#string">string</a></td>
+                  <td>repeated</td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>images</td>
+                  <td><a href="#string">string</a></td>
+                  <td>repeated</td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>timings</td>
+                  <td><a href="#item.Timings">Timings</a></td>
+                  <td>repeated</td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>priority</td>
+                  <td><a href="#int32">int32</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>available</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>veg</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>addons</td>
+                  <td><a href="#item.Addon">Addon</a></td>
+                  <td>repeated</td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>rest_id</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>created_at</td>
+                  <td><a href="#google.protobuf.Timestamp">google.protobuf.Timestamp</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+                <tr>
+                  <td>updated_at</td>
+                  <td><a href="#google.protobuf.Timestamp">google.protobuf.Timestamp</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id="item.RestId">RestId</h3>
+        <p></p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>id</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p> </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+
+      
+        <h3 id="item.SpecialCategory">SpecialCategory</h3>
+        <p></p>
+        <table class="enum-table">
+          <thead>
+            <tr><td>Name</td><td>Number</td><td>Description</td></tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td>CHEFS_SPECIAL</td>
+                <td>0</td>
+                <td><p></p></td>
+              </tr>
+            
+              <tr>
+                <td>TODAYS_SPECIAL</td>
+                <td>1</td>
+                <td><p></p></td>
+              </tr>
+            
+          </tbody>
+        </table>
+      
+        <h3 id="item.Timings">Timings</h3>
+        <p></p>
+        <table class="enum-table">
+          <thead>
+            <tr><td>Name</td><td>Number</td><td>Description</td></tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td>BREAKFAST</td>
+                <td>0</td>
+                <td><p></p></td>
+              </tr>
+            
+              <tr>
+                <td>LUNCH</td>
+                <td>1</td>
+                <td><p></p></td>
+              </tr>
+            
+              <tr>
+                <td>SNACKS</td>
+                <td>2</td>
+                <td><p></p></td>
+              </tr>
+            
+              <tr>
+                <td>DINNER</td>
+                <td>3</td>
+                <td><p></p></td>
+              </tr>
+            
+          </tbody>
+        </table>
+      
+        <h3 id="item.Type">Type</h3>
+        <p></p>
+        <table class="enum-table">
+          <thead>
+            <tr><td>Name</td><td>Number</td><td>Description</td></tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td>CHECKBOX</td>
+                <td>0</td>
+                <td><p></p></td>
+              </tr>
+            
+              <tr>
+                <td>RADIO_BUTTON</td>
+                <td>1</td>
+                <td><p></p></td>
+              </tr>
+            
+              <tr>
+                <td>SLIDER</td>
+                <td>2</td>
+                <td><p></p></td>
+              </tr>
+            
+          </tbody>
+        </table>
       
 
       
 
       
+        <h3 id="item.ItemService">ItemService</h3>
+        <p></p>
+        <table class="enum-table">
+          <thead>
+            <tr><td>Method Name</td><td>Request Type</td><td>Response Type</td><td>Description</td></tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td>AddItem</td>
+                <td><a href="#item.Item">Item</a></td>
+                <td><a href="#item.Id">Id</a></td>
+                <td><p></p></td>
+              </tr>
+            
+              <tr>
+                <td>GetItem</td>
+                <td><a href="#item.Id">Id</a></td>
+                <td><a href="#item.Item">Item</a></td>
+                <td><p></p></td>
+              </tr>
+            
+              <tr>
+                <td>GetRestItems</td>
+                <td><a href="#item.RestId">RestId</a></td>
+                <td><a href="#item.Item">Item</a> stream</td>
+                <td><p></p></td>
+              </tr>
+            
+              <tr>
+                <td>UpdateItem</td>
+                <td><a href="#item.Item">Item</a></td>
+                <td><a href="#item.Item">Item</a></td>
+                <td><p></p></td>
+              </tr>
+            
+              <tr>
+                <td>DeleteItem</td>
+                <td><a href="#item.Id">Id</a></td>
+                <td><a href="#item.Id">Id</a></td>
+                <td><p></p></td>
+              </tr>
+            
+          </tbody>
+        </table>
+
+        
     
 
     <h2 id="scalar-value-types">Scalar Value Types</h2>
